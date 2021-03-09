@@ -37,15 +37,17 @@ function Home() {
   }
 
   return (
-    <div className="wrapper">
-      <article className="home__Main">
-        <h1>
-          안녕하세요!!😄
-          <br />
-          <span>Front-end 개발자 박진모</span>입니다.
-        </h1>
-        <div>
-          <img src="http://placehold.it/400x300" alt="박진모" />
+    <div>
+      <article className="home__main">
+        <div className="wrapper">
+          <h1>
+            안녕하세요!!😄
+            <br />
+            <span>Front-end 개발자 박진모</span>입니다.
+          </h1>
+          <div>
+            <img src="http://placehold.it/400x300" alt="박진모" />
+          </div>
         </div>
       </article>
       {/* Intro */}
