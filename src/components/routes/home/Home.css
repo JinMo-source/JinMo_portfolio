@@ -1,6 +1,71 @@
+/* 공통 */
+.title {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/* home_main  */
 .home__main {
-  padding-top: 40px;
-  height: 500px;
   color: #fff;
   background-color: #1b078a;
 }
+
+.home__main__flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 80px;
+}
+h1 {
+  padding: 90px 20px;
+  width: 55%;
+  font-size: 2em;
+  line-height: 48px;
+}
+h1 > span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(135, 250, 82);
+}
+.home__main__img {
+  width: 45%;
+}
+
+.home__main__img > img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/*  home__main 끝 */
+
+/* home_intro 시작 */
+.home__intro__article {
+  margin-top: 50px;
+  width: 100%;
+}
+.home__intro__flex {
+  display: flex;
+  font-size: 1.5em;
+}
+
+.home__intro__intro {
+  width: 75%;
+  font-size: 1.2em;
+  line-height: 45px;
+}
+.home__intro__intro > span {
+  color: #da673a;
+}
+.home__intro__img {
+  width: 25%;
+}
+
+/* home_intro 끝 */
+
+/* home_contact 시작 */
+.home__contact__flex {
+  display: flex;
+}
+/* home_contact 끝 */

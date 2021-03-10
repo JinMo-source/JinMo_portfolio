@@ -1,5 +1,6 @@
 .nav__Header {
   width: 100%;
+  padding-top: 8px;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -20,11 +21,11 @@
 .nav__fontawesome > a {
   border: 2px solid #fff;
   border-radius: 3px;
-  padding: 0px 30px;
+  padding: 2px 30px;
 }
 
 .Link_css {
   cursor: pointer;
-  padding: 10px 30px;
+  padding: 2px 30px;
   color: #fff;
 }
