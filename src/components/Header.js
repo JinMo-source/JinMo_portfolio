@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { faBlog } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBlog,
+  faHome,
+  faUser,
+  faProjectDiagram,
+} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
@@ -12,16 +17,22 @@ function Header() {
         <ul className="nav__list">
           <li>
             <Link className="Link_css" to="/">
+              <FontAwesomeIcon icon={faHome} className="header__nav__icon" />
               home
             </Link>
           </li>
           <li>
             <Link className="Link_css" to="/about">
+              <FontAwesomeIcon icon={faUser} className="header__nav__icon" />
               about
             </Link>
           </li>
           <li>
             <Link className="Link_css" to="/about">
+              <FontAwesomeIcon
+                icon={faProjectDiagram}
+                className="header__nav__icon"
+              />
               Projects
             </Link>
           </li>
@@ -30,7 +41,7 @@ function Header() {
               <FontAwesomeIcon
                 icon={faGithub}
                 size="1x"
-                className="Header__icon"
+                className="header__icon"
               />
             </a>
           </li>
@@ -39,7 +50,7 @@ function Header() {
               <FontAwesomeIcon
                 icon={faBlog}
                 size="1x"
-                className="Header__icon"
+                className="header__icon"
               />
             </a>
           </li>

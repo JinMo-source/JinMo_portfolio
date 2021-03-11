@@ -1,12 +1,13 @@
 import React from "react";
 import "./Home.css";
-import homeMain from "../../../public/image/homeMain.jpg";
+import homeMain from "../../../public/image/homeMain.png";
 import homeIntro from "../../../public/image/homeIntro.jpg";
 import homeMail from "../../../public/image/homeMail.jpg";
 // fontawesome
 import {
   faBlog,
   faPhoneAlt,
+  faUser,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -88,14 +89,15 @@ function Home() {
             </div>
           </div>
         </div>
-      </article>
-      {/* Contact Me */}
-      <article>
-        <div className="wrapper">
+        {/* Contact Me */}
+        <div className="wrapper contact">
           <p className="home__contact__title title">Contact Me</p>
           <div className="home__contact__flex">
             <div className="home__contact__info">
               <p className="home__contact__info__info">
+                <FontAwesomeIcon icon={faUser} className="Email__icon" /> :
+                박진모
+                <br />
                 <FontAwesomeIcon icon={faPhoneAlt} className="Email__icon" /> :
                 010-2477-1240
                 <br />
@@ -109,7 +111,7 @@ function Home() {
                       <FontAwesomeIcon
                         icon={faGithub}
                         size="3x"
-                        className="Email__icon"
+                        className="email__icon"
                       />
                     </a>
                   </li>
@@ -118,26 +120,25 @@ function Home() {
                       <FontAwesomeIcon
                         icon={faBlog}
                         size="3x"
-                        className="Email__icon"
+                        className="email__icon"
                       />
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="home__mail__img">
+              <div className="home__contact__mail__img">
                 <img src={homeMail} alt="Email" />
               </div>
             </div>
-            <div className="home__Email">
-              <form className="contact-form" onSubmit={sendEmail}>
-                <input type="hidden" name="contact_number" />
-                <label>Name</label>
-                <input type="text" name="name" />
-                <label>Email</label>
-                <input type="email" name="email" />
-                <label>Message</label>
+            <div className="home__contact__email">
+              <form className="home__contact__email__form" onSubmit={sendEmail}>
+                <label>이름</label>
+                <input type="text" name="name" className="email__input" />
+                <label>이메일</label>
+                <input type="email" name="email" className="email__input" />
+                <label>메세지</label>
                 <textarea name="message" />
-                <input type="submit" value="Send" />
+                <input type="submit" value="보내기" className="email__submit" />
               </form>
             </div>
           </div>

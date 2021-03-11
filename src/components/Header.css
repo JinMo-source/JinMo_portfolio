@@ -2,20 +2,24 @@
   width: 100%;
   padding-top: 8px;
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   z-index: 999;
+}
+.header__nav__icon {
+  margin-right: 10px;
 }
 .nav__list {
   display: flex;
   justify-content: flex-end;
   align-content: space-around;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 .nav__list > li {
-  margin-left: 20px;
+  margin-left: 10px;
 }
-.Header__icon {
+.header__icon {
   color: #fff;
 }
 .nav__fontawesome > a {
@@ -26,6 +30,6 @@
 
 .Link_css {
   cursor: pointer;
-  padding: 2px 30px;
+  padding: 2px 20px;
   color: #fff;
 }
