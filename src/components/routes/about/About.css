@@ -1,0 +1,50 @@
+.about {
+  padding: 80px 0 20px;
+  background-color: rgb(228, 226, 211);
+}
+.about__who {
+  display: flex;
+  color: #fff;
+}
+
+.about__who > div:nth-child(2) {
+  width: 45%;
+}
+.about__who > div:nth-child(2) > img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.about__who > div:nth-child(1) {
+  width: 40%;
+  margin-right: 15%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.about__who__title {
+  color: #1b078a;
+  font-size: 3.5em;
+  margin-bottom: 15px;
+}
+.about__who__profile {
+  font-size: 2em;
+  color: #000;
+  line-height: 55px;
+}
+.about__skill {
+  margin-top: 50px;
+}
+.about__skill__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.about__skill__flex > li {
+  width: 20%;
+  padding: 1%;
+}
+.about__skill__flex > li > img {
+  width: 100%;
+  vertical-align: bottom;
+}

@@ -24,7 +24,7 @@ function Header() {
           <li>
             <Link className="Link_css" to="/about">
               <FontAwesomeIcon icon={faUser} className="header__nav__icon" />
-              about
+              profile
             </Link>
           </li>
           <li>
